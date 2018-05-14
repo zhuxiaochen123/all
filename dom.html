@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    function init() {
+      var pic = document.getElementById("pic");
+    }  
+    
+    function changePic(){
+      if (document.getElementById("pic").getAttribute("src")=="1.jpg"){
+        document.getElementById("pic").setAttribute("src","2.jpg");
+      }else{
+        document.getElementById("pic").setAttribute("src","1.jpg");
+      }
+     }
+    
+    window.onload=init;
+  </script>
+</head>
+<body>
+  <img id="pic" src="1.jpg" alt="复联图片"><br>
+  <button onclick="changePic()">点我试试</button>
+</body>
+</html>
